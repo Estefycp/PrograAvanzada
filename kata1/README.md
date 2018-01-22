@@ -14,3 +14,6 @@ Note:
 
 A, B have equal lengths in range [1, 100].
 A[i], B[i] are integers in range [0, 10^5].
+
+Mi primer acercamiento es hacer dos for y checar cuando se coincida y almacenar la posicion en el array, estuvo sencillo
+sin embargo no es el más óptimo, espero poder implimtar la hash table para una solución mas óptima 
