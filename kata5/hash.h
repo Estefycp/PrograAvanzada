@@ -27,7 +27,7 @@ typedef struct h
 
     ///
 
-} HashInt;
+} Hash;
 
 void hashInit(HashInt *, unsigned);
 
