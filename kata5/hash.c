@@ -39,7 +39,7 @@ doHash(unsigned char *str, unsigned size)
     return hash % size;
 }
 
-void hashInit(HashInt *hash, unsigned size)
+void hashInit(Hash *hash, unsigned size)
 
 {
 
@@ -48,7 +48,7 @@ void hashInit(HashInt *hash, unsigned size)
     hash->data = (HashElement *)calloc(size, sizeof(HashElement));
 };
 
-static void hashDoInsert(HashInt *hash, char *key, int value)
+static void hashDoInsert(Hash *hash, char *key, int value)
 
 {
 
@@ -101,7 +101,7 @@ static void hashDoInsert(HashInt *hash, char *key, int value)
     printDebug("Completed");
 }
 
-static void hashDoUpdate(HashInt *hash, char *key, int value)
+static void hashDoUpdate(Hash *hash, char *key, int value)
 
 {
 
@@ -128,7 +128,7 @@ static void hashDoUpdate(HashInt *hash, char *key, int value)
     }
 }
 
-void hashInsert(HashInt *hash, char *key, int value)
+void hashInsert(Hash *hash, char *key, int value)
 
 {
 
@@ -149,7 +149,7 @@ void hashInsert(HashInt *hash, char *key, int value)
     }
 };
 
-int *hashGet(HashInt *hash, char *key)
+int *hashGet(Hash *hash, char *key)
 
 {
 
