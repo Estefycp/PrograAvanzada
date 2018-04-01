@@ -1,4 +1,5 @@
-Solución: 
+
+## Solución: 
 
 Hice la solución para el small data set, el large data set lo intenté pero no llegué a resolverlo al 100.
 
@@ -20,7 +21,7 @@ Para eso guardo en dos arrays diferentes el inicio y comienzo de una actividad, 
 Lo mismo aplica cuando Jamie tiene 2 actividades.
 
 
-Problem
+## Problem
 Cameron and Jamie are longtime life partners and have recently become parents! Being in charge of a baby, exciting as it is, is not without challenges. Given that both parents have a scientific mind, they have decided to take a scientific approach to baby care.
 
 Cameron and Jamie are establishing a daily routine and need to decide who will be the main person in charge of the baby at each given time. They have been equal partners their whole relationship, and they do not want to stop now, so they decided that each of them will be in charge for exactly 12 hours (720 minutes) per day.
