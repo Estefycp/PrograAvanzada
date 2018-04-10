@@ -12,9 +12,8 @@ typedef struct
 
 int main(int argc, char **argv)
 {
-    if (argc < 3) return 1;
+    if (argc < 2) return 1;
     char *search = argv[1];
-    char *update = argv[2];
     char *dbName = "student.dat";
     FILE *data = fopen(dbName, "r+b");
     Student myStudent;
@@ -27,7 +26,7 @@ int main(int argc, char **argv)
         }
         if(!strcmp(myStudent.firstName, search))
         {
-            strcpy(myStudent.firstName, update);
+            myStudent.free = 1;
             fseek(data, -1 * sizeof(Student), SEEK_CUR);
             fwrite(&myStudent, sizeof(Student), 1, data);
             break;
